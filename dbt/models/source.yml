@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: LAB
+    database: DEV
+    schema: LAB
+    tables:
+      - name: STOCK_DATA
+        identifier: STOCK_DATA
+  - name: ANALYTICS
+    database: DEV
+    schema: LAB
+    tables:
+      - name: TEST_MDA
+        identifier: TEST_MDA
+      

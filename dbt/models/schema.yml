@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: test_mda
+    description: "Daily moving-average indicators per symbol"
+    columns:
+      - name: symbol
+        tests: [not_null]
+
+      - name: date
+        tests: [not_null]
+
+      - name: ma_7
+        tests: [not_null]
+
+      - name: ma_14
+        tests: [not_null]
+
+      - name: ma_30
+        tests: [not_null]
+
+
+  - name: test_rsi
+    description: "14-period RSI plus average gains & losses per symbol/day"
+    columns:
+      - name: symbol
+        tests: [not_null]
+
+      - name: date
+        tests: [not_null]
+
+      - name: avg_gain
+        tests: [not_null]
+
+      - name: avg_loss
+        tests: [not_null]
+
+      - name: rsi_14
+        tests:
+          - not_null

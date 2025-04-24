@@ -1,0 +1,13 @@
+dbtLab2:
+  outputs:
+    dev:
+      account: urbyhbx-mdb48684
+      database: DEV
+      password: 29$December29$December
+      role: ACCOUNTADMIN
+      schema: LAB
+      threads: 1
+      type: snowflake
+      user: mahendruSshivam
+      warehouse: COMPUTE_WH
+  target: dev
